@@ -1,3 +1,4 @@
+import { RegisterButton } from '../RegisterButton'
 import styles from './styles.module.scss'
 
 export function Header(){
@@ -10,6 +11,7 @@ export function Header(){
           <a>BLOG</a>
           <a>JOIN</a>
         </nav>
+        <RegisterButton />
         
      </div>
    </header>
