@@ -1,0 +1,30 @@
+.searchContainer {
+  display: flex;
+  margin-top: 2rem;
+  
+
+  input {
+    height: 2.8rem;
+    margin-right: 1rem;
+    padding: 1rem;
+    border: 1px solid var(--purple-400);
+    border-radius: 0.25rem;
+    font: 300 1rem "Mulish", sans-serif;
+    
+  }
+  button {
+    width: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--green-600);
+
+    border: 0;
+    border-radius: 0.25rem;
+
+    svg {
+      color: var(--white-800);
+      cursor: pointer;
+    }
+  }
+}

@@ -3,18 +3,18 @@
   width: 100%;
   height: 5rem;
   position: absolute;
-
+  z-index: 2;
 }
 
 .headerContent {
   max-width: 1120px;
   height: 5rem;
   margin: 0 auto;
-
   display: flex;
   align-items: center;
   h1 {
-    color: var(--green-800)
+    color: var(--green-800);
+    cursor: pointer;
   }
   nav {
       margin-left: auto;
