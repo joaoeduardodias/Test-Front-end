@@ -6,9 +6,6 @@ export function AreaSearch(){
 
   const [search, setSearch] = useState('')
 
-  function teste(){
-    console.log(search)
-  }
 
   return (
     <form className={styles.searchContainer}>
@@ -20,7 +17,7 @@ export function AreaSearch(){
     />
 
 
-    <button type="button" onClick={teste} ><FaSistrix /></button>
+    <button type="button"  ><FaSistrix /></button>
   </form>
   )
 

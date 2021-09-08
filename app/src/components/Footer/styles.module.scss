@@ -1,0 +1,22 @@
+.footerContainer {
+
+  font: 16px "Mulish" var(--purple-900);
+
+  width: 100%;
+  height: 5rem;
+}
+
+.footerContent {
+    max-width: 1120px;
+    height: 5rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+   div {
+     margin-left: auto;
+     color: var(--purple-200);
+     span + span {
+        margin-left: 2rem;
+     }
+   }
+}
