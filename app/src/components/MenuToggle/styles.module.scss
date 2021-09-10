@@ -1,30 +1,44 @@
-
 .menuToggle {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
   background: var(--green-800);
-
   position: absolute;
   top: 0;
   right: 0;
   left: 0;
   bottom: 0;
-
   z-index: 20;
-
-  a {
-    display: block;
-    color: var(--white-900);
-    font-size: 2rem;
-    padding: 1rem 0;
+  svg {
+    display: flex;
+    margin-top: 1.5rem;
+    margin-left: calc(100% - 13.8rem);
+    
   }
-  button {
-    margin-top: 1rem;
-    width: 10rem;
-    font-size: 1.3rem;
-    font-weight: 500;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10% auto;
+
+    a {
+      display: block;
+      color: var(--white-900);
+      font-size: 2rem;
+      padding: 1rem 0;
+    }
+    button {
+      margin-top: 1rem;
+      width: 10rem;
+      font-size: 1.3rem;
+      font-weight: 500;
+    }
+  }
+}
+@media(max-width:780px) {
+  .menuToggle {
+    svg {
+    margin-left: calc(100% - 8rem);
+
+    }
   }
 }

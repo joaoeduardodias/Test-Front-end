@@ -1,8 +1,12 @@
 import { RegisterButton } from '../RegisterButton'
 import styles from './styles.module.scss'
-import { GiHamburgerMenu } from 'react-icons/gi'
+import { FiMenu } from 'react-icons/fi'
 
-export function Header() {
+interface HeaderProps {
+  onHandleOpenMenuToggle: () => void;
+}
+
+export function Header({onHandleOpenMenuToggle}: HeaderProps) {
   return (
     <header className={styles.headerContainer}>
       <div className={styles.headerContent}>
@@ -14,7 +18,7 @@ export function Header() {
         </nav>
 
         <RegisterButton />
-        <GiHamburgerMenu size={32} color="#9cb454" />
+        <FiMenu size={32} color="#9cb454" onClick={onHandleOpenMenuToggle}/>
        
       </div>
     </header>
