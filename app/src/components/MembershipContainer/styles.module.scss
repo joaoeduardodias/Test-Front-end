@@ -1,0 +1,96 @@
+.membershipContainer {
+  background: var(--white-900);
+  height: calc(100vh - 5rem);
+  position: relative;
+  img {
+    position: absolute;
+    height: calc(100vh - 5rem);
+    top: 0;
+    right: 0;
+  }
+
+  .membershipContent {
+    max-width: 1120px;
+    margin: 0 auto;
+    height: calc(100vh - 5rem);
+    display: flex;
+    align-items: center;
+
+    .menbershipText {
+      max-width: 700px;
+
+      h2 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+      }
+      div {
+        display: flex;
+        height: 3rem;
+        align-items: center;
+        input {
+          height: 100%;
+          width: 19.5rem;
+          padding: 1rem;
+          border: 1px solid var(--purple-400);
+          border-radius: 0.25rem;
+          font: 300 1rem "Mulish", sans-serif;
+        }
+        button {
+          width: 5rem;
+          height: 100%;
+          background: var(--green-600);
+          color: var(--white-900);
+          font: 20px "Mulish";
+
+          margin-left: 1rem;
+
+          border: 0;
+          border-radius: 0.25rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1050px) {
+  .membershipContainer {
+    img {
+      display: none;
+    }
+
+    .membershipContent {
+      justify-content: center;
+
+      h2 {
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 325px) {
+  .membershipContainer {
+  
+    .membershipContent {
+     
+
+      h2 {
+        text-align: center;
+      }
+      div {
+        flex-direction: column;
+        height: auto;
+
+        input {
+          height: 5rem;
+        }
+
+        button {
+          width: 12rem !important;
+          margin-top: 1rem;
+          padding: 0.6rem 0;
+        }
+      }
+    }
+  }
+}
