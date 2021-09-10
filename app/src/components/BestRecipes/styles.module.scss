@@ -4,7 +4,6 @@
   background: var(--white-800);
 
   padding-bottom: 2rem;
-  border: 2px solid red;
 }
 .bestRecipeContent {
   max-width: 1120px;
@@ -101,5 +100,19 @@
   .recipeContainer {
     width: 100%;
     grid-template-columns: 1fr
+  }
+}
+@media(max-width: 360px) {
+
+  .bestRecipeContent {
+  
+    p {
+      max-width: 99%;
+    }
+  }
+  .recipeContainer {
+    .recipeContent {
+      width: 100%
+    }
   }
 }

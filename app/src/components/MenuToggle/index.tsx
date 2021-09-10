@@ -11,7 +11,6 @@ interface MenuToggleProps {
 
 export function MenuToggle({ onHandleOpenMenuToggle, isOpenMenuToggle }: MenuToggleProps) {
 
-console.log(isOpenMenuToggle)
 
   return isOpenMenuToggle ? (
     <div className={styles.menuToggle}>
