@@ -3,7 +3,8 @@ import { AreaSearch } from "../components/AreaSearch";
 import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
 import styles from '../styles/home.module.scss';
-
+import {FaArrowRight} from 'react-icons/fa'
+import { MenuToggle } from "../components/MenuToggle";
 export default function Home() {
 
 
@@ -13,6 +14,7 @@ export default function Home() {
         <title>Home | Healthy Food</title>
       </Head>
       <Header />
+      <MenuToggle />
       <main>
         <section className={styles.contentContainer}>
           <div className={styles.hero}>
@@ -105,53 +107,73 @@ export default function Home() {
             </p>
             <div className={styles.blogCardContent}>
 
+              <div className={styles.transparentEffect}> 
+                <button type="button"><FaArrowRight /></button>
+               </div>
+
               <div className={styles.blogCard}>
-                <img src="/blog_image_1.svg" alt="blog_image" />
-                <div className={styles.cardInfo}>
-                  <h3>Quick-start guide to nuts and seeds</h3>
-                  <div className={styles.ArticleAuthor}>
-                    <img src="/perfil.jpeg" alt="author" />
-                    <span>João Dias</span>
+                  <img src="/blog_image_1.svg" alt="blog_image" />
+                  <div className={styles.cardInfo}>
+                    <h3>Quick-start guide to nuts and seeds</h3>
+                    <div className={styles.ArticleAuthor}>
+                      <img src="/perfil.jpeg" alt="author" />
+                      <span>João Dias</span>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div className={styles.blogCard}>
+                  <img src="/blog_image_2.svg" alt="blog_image" />
+                  <div className={styles.cardInfo}>
+                    <h3>Nutrition: Tips for Improving Your Health</h3>
+                    <div className={styles.ArticleAuthor}>
+                      <img src="/perfil.jpeg" alt="author" />
+                      <span>João Dias</span>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div className={styles.blogCard}>
+                  <img src="/blog_image_3.svg" alt="blog_image" />
+                  <div className={styles.cardInfo}>
+                    <h3>The top 10 benefits of eating healthy</h3>
+                    <div className={styles.ArticleAuthor}>
+                      <img src="/perfil.jpeg" alt="author" />
+                      <span>João Dias</span>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div className={styles.blogCard}>
+                  <img src="/blog_image_4.svg" alt="blog_image" />
+                  <div className={styles.cardInfo}>
+                    <h3>Quick-start guide to nuts and seeds</h3>
+                    <div className={styles.ArticleAuthor}>
+                      <img src="/perfil.jpeg" alt="author" />
+                      <span>João Dias</span>
+                    </div>
                   </div>
                 </div>
 
-              </div>
-
-              <div className={styles.blogCard}>
-                <img src="/blog_image_2.svg" alt="blog_image" />
-                <div className={styles.cardInfo}>
-                  <h3>Nutrition: Tips for Improving Your Health</h3>
-                  <div className={styles.ArticleAuthor}>
-                    <img src="/perfil.jpeg" alt="author" />
-                    <span>João Dias</span>
+                <div className={styles.blogCard}>
+                  <img src="/blog_image_4.svg" alt="blog_image" />
+                  <div className={styles.cardInfo}>
+                    <h3>Quick-start guide to nuts and seeds</h3>
+                    <div className={styles.ArticleAuthor}>
+                      <img src="/perfil.jpeg" alt="author" />
+                      <span>João Dias</span>
+                    </div>
                   </div>
                 </div>
 
-              </div>
 
-              <div className={styles.blogCard}>
-                <img src="/blog_image_3.svg" alt="blog_image" />
-                <div className={styles.cardInfo}>
-                  <h3>The top 10 benefits of eating healthy</h3>
-                  <div className={styles.ArticleAuthor}>
-                    <img src="/perfil.jpeg" alt="author" />
-                    <span>João Dias</span>
-                  </div>
-                </div>
 
-              </div>
 
-              <div className={styles.blogCard}>
-                <img src="/blog_image_4.svg" alt="blog_image" />
-                <div className={styles.cardInfo}>
-                  <h3>Quick-start guide to nuts and seeds</h3>
-                  <div className={styles.ArticleAuthor}>
-                    <img src="/perfil.jpeg" alt="author" />
-                    <span>João Dias</span>
-                  </div>
-                </div>
 
-              </div>
+
             </div>
           </div>
         </section>
@@ -160,10 +182,10 @@ export default function Home() {
             <img src="/bloco_final_image.svg" alt="join menbership" />
             <div className={styles.menbershipText}>
               <h2>Join our membership <br />to get special offer</h2>
-              
-                <input type="text" placeholder="Enter your email address" />
-                <button type="button">Join</button>
-              
+
+              <input type="text" placeholder="Enter your email address" />
+              <button type="button">Join</button>
+
             </div>
           </div>
         </section>

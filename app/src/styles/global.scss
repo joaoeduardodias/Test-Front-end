@@ -14,7 +14,8 @@
 
   --green-600: #b7cf6d;
   --green-800: #badc58;
-
+  
+  --gray-350: #d6d6d6e5;
   --gray-400: #bcbcbc;
   --gray-500: #b4b4b4;
   --gray-600: #929292;
@@ -35,6 +36,7 @@ body {
   -webkit-font-smoothing: antialiased;
   background: var(--white-900);
   color: var(--purple-900);
+  overflow-x: hidden;
 }
 body, input, textarea, select, button {
   font: 400 1rem "Montserrat", sans-serif;

@@ -1,5 +1,4 @@
 .headerContainer {
-
   width: 100%;
   height: 5rem;
   position: absolute;
@@ -17,28 +16,77 @@
     cursor: pointer;
   }
   nav {
-      margin-left: auto;
+    margin-left: auto;
+    height: 5rem;
+    a {
+      color: var(--white-800);
+
+      display: inline-block;
+      padding: 0 1rem;
       height: 5rem;
-      a {
-        color: var(--white-800);
+      line-height: 5rem;
+      cursor: pointer;
+      transition: filter 0.3s;
+      font-weight: 700;
 
-        display: inline-block;
-        padding: 0 1rem;
-        height: 5rem;
-        line-height: 5rem;
-        cursor: pointer;
-        transition: filter 0.3s;
-        font-weight: 700;
-
-
-        &:hover {
-          filter: brightness(0.8)
-        }
+      &:hover {
+        filter: brightness(0.8);
       }
-
+    }
   }
   button {
     margin-left: 1rem;
   }
+  svg {
+    display: none;
+  }
+  .menuToggle {
+    display: none;
+  }
+}
+
+@media (max-width: 1180px) {
+  .headerContent {
+    max-width: 1080px;
+  }
+}
+
+@media (max-width: 1090px) {
+  .headerContent {
+    max-width: 1030px;
+  }
+}
+@media (max-width: 1040px) {
+  .headerContent {
+    max-width: 980px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .headerContent {
+    max-width: 980px;
+  }
+}
+@media (max-width: 960px) {
+
+.headerContainer {
+  border-bottom: 1px solid var(--gray-350);
+}
+
+  .headerContent {
+    max-width: 600px;
+    justify-content: space-between;
+     nav {
+       display: none;
+     }
+     button {
+       display: none;
+     }
+     svg {
+       display: initial;
+     }
+     
+  }
+
   
 }
