@@ -20,3 +20,44 @@
      }
    }
 }
+@media(max-width: 1150px) {
+  .footerContainer {
+    border-top: 1px solid var(--gray-350);
+  }
+  .footerContent {
+
+    max-width: 1000px;
+    > p {
+      margin-left: 2rem;
+    }
+    div {
+      margin-right: 2rem;
+    }
+  }
+}
+
+@media(max-width: 500px) {
+  .footerContent {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    div {
+      margin: 0;
+      padding-top: 1rem;
+    }
+  }
+}
+@media(max-width: 500px) {
+  .footerContent {
+   
+    p {
+      text-align: center;
+    }
+
+    div {
+      margin: 0;
+      padding-top: 1rem;
+    }
+  }
+}
