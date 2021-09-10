@@ -1,0 +1,105 @@
+.bestRecipeContainer {
+  width: 100%;
+  min-height: 100vh;
+  background: var(--white-800);
+
+  padding-bottom: 2rem;
+  border: 2px solid red;
+}
+.bestRecipeContent {
+  max-width: 1120px;
+  margin: 0 auto;
+
+  h2 {
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 2.5rem;
+  }
+  p {
+    text-align: center;
+    color: var(--gray-600);
+    font-family: "Mulish";
+    margin: 1rem 0;
+  }
+}
+.recipeContainer {
+  width: 93%;
+  margin: 3rem auto 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(31.2rem, 1fr));
+  grid-template-rows: repeat(2, minmax(13rem, auto));
+  gap: 2rem;
+
+  .recipeContent {
+    display: flex;
+    align-items: center;
+    background: var(--white-900);
+
+    border-radius: 0.4rem;
+    box-shadow: 10px 10px 10px 4px #dddddd;
+    img {
+      height: 13rem;
+    }
+
+    div {
+      margin-left: 1rem;
+
+      h3 {
+        font-size: 2rem;
+      }
+      button {
+        height: 2.5rem;
+        width: 7rem;
+
+        border: 0;
+        border-radius: 0.25rem;
+
+        margin-top: 1rem;
+
+        background: var(--green-600);
+      }
+    }
+  }
+}
+
+@media (max-width: 1060px) {
+  .recipeContainer {
+    .recipeContent {
+      box-shadow: 0 10px 10px 6px #dddddd;
+    }
+  }
+}
+
+@media (max-width: 540px) {
+  .recipeContainer {
+    .recipeContent {
+      flex-direction: column;
+      width: 25rem;
+      padding: 1.5rem 0;
+      margin: 0 auto;
+      img {
+        border-radius: 0.35rem;
+      }
+      h3 {
+        text-align: center;
+      }
+      div {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+        button {
+          margin: 1rem auto 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .recipeContainer {
+    width: 100%;
+    grid-template-columns: 1fr
+  }
+}

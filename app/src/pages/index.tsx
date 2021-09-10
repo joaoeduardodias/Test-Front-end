@@ -5,16 +5,23 @@ import { Header } from "../components/Header";
 import styles from '../styles/home.module.scss';
 import {FaArrowRight} from 'react-icons/fa'
 import { MenuToggle } from "../components/MenuToggle";
+import { useState } from "react";
+import { BestRecipes } from "../components/BestRecipes";
 export default function Home() {
 
+  const [ isOpenMenuToggle, setIsOpenMenuToggle ] = useState(false)
+
+  function handleOpenMenuToggle(){
+      setIsOpenMenuToggle(!isOpenMenuToggle)
+    }
 
   return (
     <>
       <Head>
         <title>Home | Healthy Food</title>
       </Head>
-      <Header />
-      <MenuToggle />
+      <Header onHandleOpenMenuToggle={handleOpenMenuToggle}/>
+      <MenuToggle onHandleOpenMenuToggle={handleOpenMenuToggle} isOpenMenuToggle={isOpenMenuToggle} />
       <main>
         <section className={styles.contentContainer}>
           <div className={styles.hero}>
@@ -24,57 +31,11 @@ export default function Home() {
 
           <img src="/Illustration.svg" alt="fruit" />
         </section>
-        <section className={styles.bestRecipeContainer}>
+        
 
+        <BestRecipes />
 
-          <div className={styles.bestRecipeContent}>
-            <h2>Our Best Recipes</h2>
-            <p>
-              Far far away, behind the word mountains, far from the countries <br />
-              Vokalia and Consonantia, there live the blind texts.
-            </p>
-
-            <div className={styles.recipeContainer}>
-
-              <div className={styles.recipeContent}>
-                <img src="/comida_1.svg" alt="food" />
-                <div>
-                  <h3>Broccoli Salad with Bacon</h3>
-                  <button type="button">See Recipe</button>
-                </div>
-
-              </div>
-              <div className={styles.recipeContent}>
-                <img src="/comida_2.svg" alt="food" />
-                <div>
-                  <h3>Classic Beef Burgers</h3>
-                  <button type="button">See Recipe</button>
-                </div>
-
-              </div>
-              <div className={styles.recipeContent}>
-                <img src="/comida_3.svg" alt="food" />
-                <div>
-                  <h3>Classic Potato Salad</h3>
-                  <button type="button">See Recipe</button>
-                </div>
-
-              </div>
-              <div className={styles.recipeContent}>
-                <img src="/comida_4.svg" alt="food" />
-                <div>
-                  <h3>Cherry Cobbler on the Grill</h3>
-                  <button type="button">See Recipe</button>
-                </div>
-
-              </div>
-            </div>
-          </div>
-
-
-
-        </section>
-        <section className={styles.bestServicesContainer}>
+        {/* <section className={styles.bestServicesContainer}>
 
           <img src="/bloco_services.svg" alt="best services" />
           <div className={styles.bestServiceContent}>
@@ -96,8 +57,8 @@ export default function Home() {
               <button type="button">Know More</button>
             </div>
           </div>
-        </section>
-
+        </section> */}
+{/* 
         <section className={styles.blogContainer}>
           <div className={styles.blogContent}>
             <h2>Read Our Blog</h2>
@@ -176,8 +137,8 @@ export default function Home() {
 
             </div>
           </div>
-        </section>
-        <section className={styles.membershipContainer}>
+        </section> */}
+        {/* <section className={styles.membershipContainer}>
           <div className={styles.membershipContent}>
             <img src="/bloco_final_image.svg" alt="join menbership" />
             <div className={styles.menbershipText}>
@@ -188,9 +149,10 @@ export default function Home() {
 
             </div>
           </div>
-        </section>
+        </section> */}
+        <h2>eu estou aqiiiiiiiiiiiiiii</h2>
       </main>
-      <Footer />
+      {/* <Footer /> */}
 
     </>
   )

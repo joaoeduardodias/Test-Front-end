@@ -90,3 +90,20 @@
 
   
 }
+@media(max-width:550px) {
+  .headerContent {
+    max-width: 470px;
+  }
+} 
+@media(max-width:430px) {
+  .headerContent {
+    max-width: 400px;
+  }
+  
+} 
+@media(max-width:380px) {
+  .headerContent {
+    max-width: 320px;
+  }
+  
+} 
