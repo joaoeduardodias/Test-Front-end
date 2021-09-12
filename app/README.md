@@ -21,7 +21,7 @@ Healthy Food
   To access the application, access the link
 
   ```bash
-  https://healthy-food-alpha.vercel.app/register
+  https://healthy-food-alpha.vercel.app/
   ```
 
   ##  🚀  Technologies
