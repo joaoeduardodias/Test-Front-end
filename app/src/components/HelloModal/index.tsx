@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import { FormEvent, useState, useContext } from 'react'
 import { FiX } from 'react-icons/fi'
 import Modal from 'react-modal'
@@ -7,10 +8,30 @@ interface HelloModalProps {
   isOpen: boolean;
   onRequestClose: () => void;
 }
+interface User {
+  name: string;
+  dateBirth: string;
+  cpf: string;
+  address: {
+    cep: string;
+    number: number;
+    street: string;
+    neighborhood: string;
+    city: string;
+    state: string;
+  }
+}
 
 export function HelloModal({ isOpen, onRequestClose }: HelloModalProps) {
+  const [userName, setUserName] = useState<string>()
+  useEffect(()=>{
+    if(localStorage.getItem('@healthyFood:User')){
+      let data = localStorage.getItem('@healthyFood:User')
+      let {name: userName} = JSON.parse(data) as User
+      setUserName(userName)
+    }
 
-  const {name: userName} = JSON.parse(localStorage.getItem('@healthyFood:User'))
+  }, [])
   
 
   return (

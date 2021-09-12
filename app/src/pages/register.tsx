@@ -12,7 +12,7 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import Cookies from 'js-cookie';
 import { HelloModal } from '../components/HelloModal';
-// import { InputMask } from '../components/Form/InputMask';
+
 
 export default function Register() {
 
@@ -28,6 +28,7 @@ export default function Register() {
   }
 
   const [cep, setCep] = useState<number>()
+  const [ data, setData] = useState<FormData>()
   const formRef = useRef(null)
 
   async function handleSubmit(data: FormData, { reset }) {
@@ -50,8 +51,11 @@ export default function Register() {
       await schema.validate(data, {
         abortEarly: false,
       })
+      
+      setData(data)
+    
 
-      localStorage.setItem('@healthyFood:User',JSON.stringify(data))
+     
       Cookies.set("User", JSON.stringify(data))
 
       reset()
@@ -86,6 +90,13 @@ export default function Register() {
     }
 
   }
+
+
+  useEffect(()=>{
+    if(data){
+      localStorage.setItem('@healthyFood:User', JSON.stringify(data))
+    }
+  }, [data])
 
   useEffect(() => {
 
