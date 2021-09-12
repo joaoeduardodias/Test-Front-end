@@ -1,12 +1,17 @@
 import styles from './styles.module.scss';
+import Link from 'next/link'
 
-export function RegisterButton(){
+export function RegisterButton() {
 
 
   return (
-    <button type="button" className={styles.registerButton}>
+    <Link href="/register">
+      <button type="button" className={styles.registerButton}>
         Register
-    </button>
+      </button>
+    </Link>
+
+
   )
 
 }

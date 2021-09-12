@@ -3,7 +3,6 @@ import { AreaSearch } from "../components/AreaSearch";
 import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
 import styles from '../styles/home.module.scss';
-import {FaArrowRight} from 'react-icons/fa'
 import { MenuToggle } from "../components/MenuToggle";
 import { useState } from "react";
 import { BestRecipes } from "../components/BestRecipes";
