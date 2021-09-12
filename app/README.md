@@ -63,6 +63,17 @@ $ yarn dev
 $ http://localhost:3000
 ```
 
+<br />
+<br />
+<br />
+
+
+<img style="border-radius: 20px" src="https://github.com/joaoeduardodias/Test-Front-end/blob/master/app/github/testeFront.gif"  alt="Gif application">
+
+
+### The application is 100% responsive, check below
+
+<img style="border-radius: 20px" src="https://github.com/joaoeduardodias/Test-Front-end/blob/master/app/github/testeFrontMobile.gif"  alt="Gif application responsive">
 
 <br>
 <br>
