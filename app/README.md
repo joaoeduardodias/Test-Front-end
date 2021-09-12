@@ -1,34 +1,91 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1 align="center">
 
-## Getting Started
+Healthy Food
+</h1>
 
-First, run the development server:
+<p align="center">Project developed for a front-end test where the entire landing page and customer registration page on the company's website were developed.
+</p>
+<br>
+<br>
+<p align="center">
+ <a href="#Technologies">Technologies</a> •
+ <a href="#Get-Started">Get started</a> •
+ <a href="#Developer">Developer</a>
+</p>
+<br>
+<br>
+
+  ##  🚀  Technologies
+
+  This project was development with the following technologies
+
+<br>
+
+  -   ✅  Typescript
+  -   ✅  NodeJS
+  -   ✅  ReactJS
+  -   ✅  NextJS
+
+  -   ✅  Sass
+  -   ✅  Create-next-app
+
+
+
+<br>
+<br>
+
+## 🏁  Get started
+
+### 🚧 To run the project, you must have installed [NodeJS](https://nodejs.org/en/) and, or [Yarn](https://yarnpkg.com/) 🚧
+<br>
+
+### First step is to open your terminal where you want to download the project.
+
+<br>
+
+### To download and initializing the project run the following command.
 
 ```bash
-npm run dev
-# or
-yarn dev
+$ git clone https://github.com/joaoeduardodias/Test-Front-end.git
+$ cd Test-Front-end
+$ yarn
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Then run the following command to start the application
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+```bash
+$ yarn dev
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+### Open a tab in your browser with the project running in the following url
+```bash
+$ http://localhost:3000
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-## Learn More
+<br>
+<br>
+<br>
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## 👨‍🔧 Developer
+---
+<br>
+<a href="https://www.linkedin.com/in/jo%C3%A3o-dias-465157183/">
+ <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/49342574?v=4" width="100px;" alt=""/>
+ <br />
+ <sub><b>João Dias</b></sub></a> <a href="https://www.linkedin.com/in/jo%C3%A3o-dias-465157183/" title="João Dias">&nbsp;&nbsp;🚀</a>
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Feito com ❤️ por João Dias 👋🏽 Entre em contato!
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+ [![Linkedin Badge](https://img.shields.io/badge/-João_Dias-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/jo%C3%A3o-dias-465157183/)](https://www.linkedin.com/in/jo%C3%A3o-dias-465157183/)
+[![Gmail Badge](https://img.shields.io/badge/-joaoeduardodias123@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:joaoeduardodias123@gmail.com)](mailto:joaoeduardodias123@gmail.com)
+<br>
+<br>
+
+<h3 align="center">
+	🚧  Healthy Food  🚀  🚧
+</h3>
