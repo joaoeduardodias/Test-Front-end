@@ -61,7 +61,6 @@ export default function Register() {
       reset()
       formRef.current.setErrors({})
 
-      handleOpenHelloModal()
 
 
     } catch (err) {
@@ -95,6 +94,8 @@ export default function Register() {
   useEffect(()=>{
     if(data){
       localStorage.setItem('@healthyFood:User', JSON.stringify(data))
+      handleOpenHelloModal()
+
     }
   }, [data])
 

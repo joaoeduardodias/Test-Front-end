@@ -31,7 +31,7 @@ export function HelloModal({ isOpen, onRequestClose }: HelloModalProps) {
       setUserName(userName)
     }
 
-  }, [])
+  }, [isOpen])
   
 
   return (
