@@ -11,9 +11,21 @@ import * as Yup from 'yup'
 import { useEffect } from 'react';
 import { useState } from 'react';
 import Cookies from 'js-cookie';
+import { HelloModal } from '../components/HelloModal';
 // import { InputMask } from '../components/Form/InputMask';
 
 export default function Register() {
+
+  const [isHelloModalOpen, setIsHelloModalOpen] = useState(false)
+  
+
+  function handleOpenHelloModal() {
+    setIsHelloModalOpen(true)
+  }
+
+  function handleCloseHelloModal () {
+    setIsHelloModalOpen(false)
+  }
 
   const [cep, setCep] = useState<number>()
   const formRef = useRef(null)
@@ -45,9 +57,7 @@ export default function Register() {
       reset()
       formRef.current.setErrors({})
 
-
-      // Modal
-
+      handleOpenHelloModal()
 
 
     } catch (err) {
@@ -64,6 +74,7 @@ export default function Register() {
 
   }
 
+ 
 
   async function handleCompletedAddress() {
     let value = formRef.current.getFieldValue('address.cep')
@@ -115,6 +126,10 @@ export default function Register() {
       </Head>
 
       <div className={styles.registerContainer}>
+
+       <HelloModal isOpen={isHelloModalOpen} onRequestClose={handleCloseHelloModal} />
+
+
         <button type="button" className={styles.homeButton}>
           <Link href="/" >
             <a><FaArrowLeft /></a>
